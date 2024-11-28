@@ -1,0 +1,15 @@
+fastapi
+unicorn
+sqlalchemy
+psycopg2-binary
+jwt
+bcrypt
+pydantic
+websockets
+anyio
+uvicorn[standard]
+python-jose[cryptography]
+python-dotenv
+passlib
+jose
+starlette
