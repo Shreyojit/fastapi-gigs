@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from fastapi.security import OAuth2PasswordBearer
-from routers import auth,user
+from routers import auth,user,test
 from db import Base, engine
 
 
@@ -41,3 +41,4 @@ async def root():
 # Include routers for authentication
 app.include_router(auth.router, prefix="/api/auth", tags=["Auth"])
 app.include_router(user.router, prefix="/api/users", tags=["Users"])
+app.include_router(test.router, prefix="/api", tags=["Sellers"])
